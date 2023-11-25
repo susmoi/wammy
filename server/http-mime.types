@@ -1,0 +1,4 @@
+# MIME type mapping file used by http
+# http://www.iana.org/assignments/media-types/media-types.xhtml
+
+application/mjs mjs
