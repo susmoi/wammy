@@ -44,7 +44,7 @@ function addTextToClipboard () {
         popup.style.display = 'none';
         popup_container.style.display = 'none';
         popup.style.opacity = '100%';
-      }, 1002);
+      }, 5000);
     });
 
   });
