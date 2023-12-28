@@ -65,7 +65,7 @@ const screensaverContainer = document.getElementById('screensaver-container');
         screensaverContainer.style.display ='flex';
         wammyLogo.style.display = 'block';
         wammyLogo.style.opacity = '100%';
-      }, 30000);
+      }, 60000);
     }
 
     // Listens for mouse movement
