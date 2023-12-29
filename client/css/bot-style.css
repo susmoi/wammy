@@ -22,11 +22,10 @@
 .wammy-top {
   display: flex;
   flex-direction: row;
-  opacity: 0;
   background-color: none;
 }
 
-.wammy-version-tag-container{
+.wammy-timestamp-container{
   display: flex;
   justify-content: start;
   width: 50%;
@@ -34,7 +33,7 @@
   margin-left: 1rem;
 }
 
-.wammy-version-tag {
+.wammy-timestamp {
   background-color: hsl(228 100% 60%); /* Blue */
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .3rem;
@@ -106,17 +105,19 @@ ul {
 .user-prompt-container {
   display: flex;
   justify-content: end;
-  padding: .8rem;
-  margin-bottom: .8rem;
+  padding: .5rem;
   list-style: none;
   border-radius: 1rem;
   width: 100%;
-  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+  height: max-content;
+  /* transition: 300ms cubic-bezier(.42,0,.81,1.01); */
+  /* background-color: hsl(228 100% 60% / .9); */
 }
 
 .user-prompt-container:hover {
-  background-color: hsl(228 100% 60% / .9); /* Blue */
+  /* background-color: hsl(228 100% 60% / .9); /* Blue */ */
   cursor: pointer;
+  outline: solid 1.6px;
 }
 .user-prompt-text {
   color: hsl(240 13% 6% ); /* Black */
@@ -125,7 +126,6 @@ ul {
   font-size: .8rem;
   line-height: 1.4;
   padding: .8rem;
-  margin-bottom: .8rem;
   list-style: none;
   border-radius: 1rem;
   width: fit-content;
@@ -139,18 +139,20 @@ ul {
 .wammy-response-container {
   display: flex;
   justify-content: start;
-  padding: .8rem;
+  padding: .5rem;
   margin-bottom: .8rem;
   list-style: none;
   border-radius: 1rem;
   width: 100%;
-  transition: 300ms cubic-bezier(.42,0,.81,1.01);
+  /* transition: 300ms cubic-bezier(.42,0,.81,1.01); */
+  /* background-color: hsl(228 100% 60% / .9); */
 }
 
 .wammy-response-container:hover{
-  background-color: hsl(32 97% 50% / .9); /* Orange */
+  /* background-color: hsl(32 97% 50% / .9); /* Orange */ */
   color: black;
   cursor: pointer;
+  outline: solid 1.6px;
 }
 
 .wammy-response-text {
@@ -160,7 +162,6 @@ ul {
   font-size: .8rem;
   line-height: 1.4;
   padding: .8rem;
-  margin-bottom: .8rem;
   list-style: none;
   border-radius: 1rem;
   width: fit-content;
@@ -404,12 +405,12 @@ ul {
     border-radius: 20px;
   }
 
-  .wammy-version-tag-container{
+  .wammy-timestamp-container{
     margin-top: 1.4rem;
 
   }
 
-  .wammy-version-tag {
+  .wammy-timestamp {
     font-size: .2rem;
     padding: .2rem;
   }
