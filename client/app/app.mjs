@@ -11,42 +11,52 @@ const promptList = document.getElementById('prompt-library-list');
 const promptListItems = promptList.querySelectorAll('li');
 const wammyLogo = document.getElementById('wammyLogo');
 const screensaverContainer = document.getElementById('screensaver-container');
+const wammyTimeStamp = document.getElementById('timestamp');
 
 
+
+// Get Date and Time Function //
+  function setChatDateAndTime() {
+    const dateObject = new Date();
+    const todayDate = dateObject.toDateString()
+    const localTime = dateObject.toLocaleTimeString()
+    const chatTime = todayDate + ' ' + localTime
+    wammyTimeStamp.innerText = chatTime
+  }
 
 // Copy Text Function //
   function addTextToClipboard () {
-  // Adds every bot response into a list
-  var botResponses =  dialogueBox.querySelectorAll('.wammy-response-text');
-  // console.log('Logging botresponses: ')
-  // console.log(botResponses)
+    // Adds every bot response into a list
+    var botResponses =  dialogueBox.querySelectorAll('.wammy-response-text');
+    // console.log('Logging botresponses: ')
+    // console.log(botResponses)
 
-  botResponses.forEach((item) => {
+    botResponses.forEach((item) => {
 
-    item.addEventListener('click', (e) => {
-      let timer;
-      // console.log('Logging Wammy Response: ');
-      // console.log(item.innerText);
-      var copyText = e.target.innerText;
+      item.addEventListener('click', (e) => {
+        let timer;
+        // console.log('Logging Wammy Response: ');
+        // console.log(item.innerText);
+        var copyText = e.target.innerText;
 
-      navigator.clipboard.writeText(copyText);
-      var popup_container = document.getElementById('popup-container');
-      var popup = document.getElementById('copy-popup');
+        navigator.clipboard.writeText(copyText);
+        var popup_container = document.getElementById('popup-container');
+        var popup = document.getElementById('copy-popup');
 
-      popup.style.display = 'block';
-      popup_container.style.display = 'flex';
-      timer = setTimeout(() => {
-        popup.style.opacity = '0%';
-      }, 100);
-      timer = setTimeout(() => {
-        popup.style.display = 'none';
-        popup_container.style.display = 'none';
-        popup.style.opacity = '100%';
-      }, 5000);
+        popup.style.display = 'block';
+        popup_container.style.display = 'flex';
+        timer = setTimeout(() => {
+          popup.style.opacity = '0%';
+        }, 100);
+        timer = setTimeout(() => {
+          popup.style.display = 'none';
+          popup_container.style.display = 'none';
+          popup.style.opacity = '100%';
+        }, 5000);
+      });
+
     });
-
-  });
-}
+  }
 
 // Screen Saver Function //
   document.addEventListener('DOMContentLoaded', (event) => {
@@ -252,6 +262,9 @@ input.addEventListener('input', autoResize, false);
 
 // Start Up Functions //
   window.onload = () => {
+
+    // Sets Chat timestap
+    setChatDateAndTime()
 
     //allows commands to run
     activateCommands();
