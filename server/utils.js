@@ -1,5 +1,6 @@
 import {knowledgeSelf} from "./knowledge.js";
 import {knowledgeLizBrown} from "./knowledge.js";
+import {chatTime} from "./knowledge.js";
 import {conversationCasual} from "./example-conversations.js";
 
 // this file adds utility functions
@@ -8,9 +9,10 @@ export function enrichWithWammy(prompt) {
 
   const context = `
 
-  This is what wammy knows about itself ${knowledgeSelf}.
-  This is what wammy knows about Liz Brown ${knowledgeLizBrown}.
-  This is how Wammy talks ${conversationCasual}.
+  Wammy knows ${knowledgeSelf}.
+  Wammy knows ${knowledgeLizBrown}.
+  Wammy converses like this ${conversationCasual}.
+  Wammy knows the date and time by checking ${chatTime}.
 
   User: ${prompt}
   Wammy:
