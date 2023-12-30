@@ -20,7 +20,6 @@
 <body class="">
   <main class="">
     <div id="root" class="wammy-container">
-
       <div class="wammy-top">
         <div class="wammy-timestamp-container">
           <p id=timestamp class="wammy-timestamp"></p>
@@ -31,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div id="screensaver-container">
+      <div id="screensaver-container" style="display: none">
         <figure id='wammyLogo' class="">
           <div class="" >
             <a href="http://localhost:2626" target="_blank">
@@ -43,7 +42,6 @@
           </div>
         </figure>
       </div>
-
       <div id="dia-container" class="dialogue-container">
 
         <ul id="dialogue" class="">
@@ -55,29 +53,29 @@
       <div class="wammy-bottom">
         <!-- Empty Div, styled in CSS file -->
       </div>
-    </div>
-    <div class="prompt-container">
-      <div id="prompt-library-container">
-        <div class="prompt-library-top">
-          <h3 class="prompt-library-header">Prompt Library</h3>
+      <div class="prompt-container">
+        <div id="prompt-library-container">
+          <div class="prompt-library-top">
+            <h3 class="prompt-library-header">Prompt Library</h3>
+          </div>
+            <ul id="prompt-library-list">
+              <li id="prompt-list-first-item" tabindex="1">/p phrase change alters a phrase</li>
+              <li tabindex="2">/p origin seeker finds the origin(s) of a word</li>
+              <li tabindex="3">/p screen saver turns on the screen saver</li>
+            </ul>
         </div>
-          <ul id="prompt-library-list">
-            <li id="prompt-list-first-item" tabindex="1">/p phrase change alters a phrase</li>
-            <li tabindex="2">/p origin seeker finds the origin(s) of a word</li>
-            <li tabindex="3">/p screen saver turns on the screen saver</li>
-          </ul>
+        <form id="prompt-form" class="prompt-bar" action="index.html" method="post">
+            <textarea id="prompt-input" autofocus="autofocus" name="user-prompt" placeholder="Your message"></textarea>
+            <button id="prompt-button" type="submit" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                <style>svg{fill:#000}</style>
+                <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"/>
+              </svg>
+            </button>
+          </form>
       </div>
-
-      <form id="prompt-form" class="prompt-bar" action="index.html" method="post">
-          <textarea id="prompt-input" autofocus="autofocus" name="user-prompt" placeholder="Your message"></textarea>
-          <button id="prompt-button" type="submit" class="">
-            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
-              <style>svg{fill:#000}</style>
-              <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"/>
-            </svg>
-          </button>
-        </form>
     </div>
+
     <section class="terms-container">
       <div class="terms-button-container">
         <button type="button" name="button" class="terms-button" popovertarget="terms" popovertargetaction="toggle">

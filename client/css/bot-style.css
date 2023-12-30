@@ -1,4 +1,5 @@
-@font-face {
+@fonhey
+  t-face {
   font-family: 'clearSans';
   src: url("fonts/clearsansscreen-bk.woff2")
 }
@@ -10,8 +11,8 @@
   display: flex;
   flex-direction: column;
   background-color: hsl(240, 30.3%, 87.1%);
-  border-color: hsl(240, 20%, 9.8%);
-  border-style: solid;
+  /*! border-color: hsl(240, 20%, 9.8%); */
+  /*! border-style: solid; */
   border-width: 2px;
   border-radius: 20px;
   max-height: 60vh;
@@ -21,27 +22,26 @@
 
 .wammy-top {
   display: flex;
-  flex-direction: row;
-  background-color: none;
+  flex-direction: column;
+  border-radius: 20px;
 }
 
 .wammy-timestamp-container{
   display: flex;
-  justify-content: start;
-  width: 50%;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  justify-content: center;
+  width: 100%;
+  padding-top: .6rem;
+  padding-left: 1rem;
+  border-radius: 20px;
 }
 
 .wammy-timestamp {
-  background-color: hsl(228 100% 60%); /* Blue */
+  /* background-color: hsl(228 100% 60%); /* Blue */ */
   font-family: "clearSans", "Arial", sans-serif;
-  font-size: .3rem;
+  font-size: .4rem;
   padding: .3rem;
   width: max-content;
-  border-color: hsl(228 100% 63%);
-  border-radius: 3px 3px 3px 3px;
-  border-style: outset;
+  color: hsl(240, 30%, 65%);
 }
 
 .wammy-bottom {
@@ -90,7 +90,7 @@
 
 #dia-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: auto;
   padding: 0 3rem 0 3rem;
   border-radius: 20px;
@@ -175,7 +175,7 @@ ul {
 
 .prompt-container{
   display: flex;
-  margin: 0 0 0 0;
+  padding: 0 20px 10px 20px;
   width: 100%;
   text-align: center;
   /* padding: 0 8rem; */
@@ -216,7 +216,7 @@ ul {
 
 
 #prompt-input {
-  background-color: hsl(240, 30.3%, 87.1%);
+  background-color: hsl(240, 30.3%, 75.1%);
   color: hsl(240 13% 6%);
 
   font-family: "clearSans", "Arial", sans-serif;
@@ -230,9 +230,9 @@ ul {
   margin: 0;
   padding: 10px 4px 10px 30px;
 
-  border-color: hsl(240 18% 15%);
+  /*! border-color: hsl(240, 30.3%, 75.1%); */
   border-radius: 40px 0 0 40px;
-  border-style: outset none outset outset;
+  border-style: none;
 
   resize: none;
   overflow: hidden;
@@ -248,13 +248,13 @@ ul {
 #prompt-input:focus {
   transition: 145ms cubic-bezier(.42,0,.81,1.01);
   outline: none;
-  background-color: hsl(240, 30.3%, 85.1%);
-  border-style: outset none outset outset;
+  background-color: hsl(240, 30.3%, 75.1%);
+  /* border-style: outset none outset outset; */
   cursor: default;
 }
 
 #prompt-button {
-  background-color: hsl(240, 30.3%, 83.1%);
+  background-color: hsl(240, 30.3%, 75.1%);
   color: #000;
 
   height: 40px;
@@ -263,11 +263,12 @@ ul {
 
   font-family: "clearSans", "Arial", sans-serif;
 
-  border-color: hsl(240 18% 10%);
+  /*! border-color: hsl(240, 30.3%, 75.1%); */
   border-radius: 0 40px 40px 0;
   padding: 10px 0 10px 0;
 
   transition: 145ms cubic-bezier(.42,0,.81,1.01);
+  border: none;
 }
 
 #prompt-button:hover {
@@ -337,9 +338,9 @@ ul {
 }
 
 .terms-button{
-  background-color: hsl(240, 16.7%, 95.3%);
+  background-color: hsl(240, 30.3%, 75.1%);
   border: none;
-  color: hsl(0 0% 20%);
+  color: #555569;
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .5rem;
 }
@@ -490,7 +491,7 @@ ul {
 
 body {
   font-size: 16px;
-  background-color: hsl(240, 16.7%, 95.3%);
+  background-color: hsl(240, 30.3%, 75.1%);
 }
 
 /* MAIN */
