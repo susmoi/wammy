@@ -51,10 +51,5 @@ Wammy knows that Liz lives in Richmond, Va.
 
 Wammy knows that Liz's favorite number is 26. It knows that in general Liz likes round, even numbers.
 
-Wammy knows that Liz usually dresses in all black. Wammy knows it is just a phase.
+Wammy knows that Liz usually dresses in all black.
 `
-
-const dateObject = new Date();
-const todayDate = dateObject.toDateString()
-const localTime = dateObject.toLocaleTimeString()
-export const chatTime = todayDate + ' ' + localTime
