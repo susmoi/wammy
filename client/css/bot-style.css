@@ -28,6 +28,8 @@
 
 .wammy-timestamp-container{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   padding-top: .6rem;
@@ -35,11 +37,20 @@
   border-radius: 20px;
 }
 
+.wammy-timestamp-header{
+  font-family: "clearSans", "Arial", sans-serif;
+  font-size: .4rem;
+  font-weight: bold;
+  padding: 0;
+  width: max-content;
+  color: hsl(240, 30%, 65%);
+}
+
 .wammy-timestamp {
   /* background-color: hsl(228 100% 60%); /* Blue */ */
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .4rem;
-  padding: .3rem;
+  padding: .1rem 0 0 0;
   width: max-content;
   color: hsl(240, 30%, 65%);
 }
@@ -175,7 +186,7 @@ ul {
 
 .prompt-container{
   display: flex;
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 15px 20px;
   width: 100%;
   text-align: center;
   /* padding: 0 8rem; */
@@ -212,6 +223,7 @@ ul {
 #prompt-form{
   display: flex;
   width: 100%;
+  border-radius: 10px;
 }
 
 
@@ -231,7 +243,7 @@ ul {
   padding: 10px 4px 10px 30px;
 
   /*! border-color: hsl(240, 30.3%, 75.1%); */
-  border-radius: 40px 0 0 40px;
+  border-radius: 15px 0 0 15px;
   border-style: none;
 
   resize: none;
@@ -264,7 +276,7 @@ ul {
   font-family: "clearSans", "Arial", sans-serif;
 
   /*! border-color: hsl(240, 30.3%, 75.1%); */
-  border-radius: 0 40px 40px 0;
+  border-radius: 0 15px 15px 0;
   padding: 10px 0 10px 0;
 
   transition: 145ms cubic-bezier(.42,0,.81,1.01);
@@ -399,15 +411,12 @@ ul {
   }
 
   .wammy-top{
-    position: fixed;
-    top: 0;
     width: 100%;
     margin: 0;
     border-radius: 20px;
   }
 
   .wammy-timestamp-container{
-    margin-top: 1.4rem;
 
   }
 
