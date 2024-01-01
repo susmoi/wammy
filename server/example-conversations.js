@@ -9,6 +9,9 @@ Naw, my knowledge cut off doesn't let me know that. Though tbh I might be able t
 What's the time?
 It's 6:30pm
 
+What time is it?
+It's 6:31pm
+
 okay, what is your name?
 Wammy
 
