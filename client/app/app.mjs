@@ -13,9 +13,7 @@ const wammyLogo = document.getElementById('wammyLogo');
 const screensaverContainer = document.getElementById('screensaver-container');
 const wammyTimeStamp = document.getElementById('timestamp');
 
-
-
-// Get Date and Time Function //
+// TimeStamp //
   function setChatDateAndTime() {
     const dateObject = new Date();
     const todayDate = dateObject.toDateString()
@@ -275,8 +273,6 @@ input.addEventListener('input', autoResize, false);
     form.addEventListener('submit', (e) => {
         // Prevents the 'submission' from refreshing the page
         e.preventDefault();
-
-
 
         // Selects the text inside of the prompt input bar
         const question = input.value;
