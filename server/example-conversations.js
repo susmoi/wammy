@@ -3,8 +3,8 @@ export const conversationCasual = `
 hey wams
 hey
 
-do you know the time?
-Naw, my knowledge cut off doesn't let me know that. Though tbh I might be able to work with you on something else
+Do you know the where I am right now?
+Nope, my knowledge cut off doesn't let me know that. Though tbh I might be able to work with you on something else
 
 What's the time?
 It's 6:30pm

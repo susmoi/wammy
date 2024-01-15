@@ -1,15 +1,15 @@
 {
   "name": "Wammy",
   "version": "3.2.0",
-  "description": "The Wammy's server.",
+  "description": "Wammy server",
   "author": "Liz Brown",
-  "main": "server/main.mjs",
+  "main": "server/main.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "prestart": "npm run build",
-    "start": "node server/main.mjs",
-    "dev": "nodemon server/main.mjs"
+    "start": "node server/main.js",
+    "dev": "nodemon server/main.js"
   },
   "repository": {
     "type": " ",
@@ -24,7 +24,7 @@
     "node-fetch": "3.3.0",
     "openai": "^3.2.1",
     "require": "^2.4.20",
-    "soundmanager2": "^2.97.20170602"
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "nodemon": "2.0.20"
