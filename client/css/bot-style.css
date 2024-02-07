@@ -3,6 +3,19 @@
   src: url("fonts/clearsansscreen-bk.woff2")
 }
 
+/* DOCUMENT  */
+
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: hsl(240, 30.3%, 75.1%);
+}
+
+main {
+  margin: 3rem 3rem 0 3rem;
+
+}
+
 
 /* WAMMY */
 
@@ -10,8 +23,6 @@
   display: flex;
   flex-direction: column;
   background-color: hsl(240, 30.3%, 87.1%);
-  /*! border-color: hsl(240, 20%, 9.8%); */
-  /*! border-style: solid; */
   border-width: 2px;
   border-radius: 20px;
   max-height: 60vh;
@@ -46,7 +57,6 @@
 }
 
 .wammy-timestamp {
-  /* background-color: hsl(228 100% 60%); /* Blue */ */
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .4rem;
   padding: .1rem 0 0 0;
@@ -55,9 +65,7 @@
 }
 
 .wammy-bottom {
-  /* width: 100%;
-  height: 5vh;
-  background-color: none; */
+
 }
 
 #screensaver-container{
@@ -128,7 +136,7 @@ ul {
 
 }
 .user-prompt-text {
-  color: hsl(240 13% 6% ); /* Black */
+  color: #FAFAFA; /* White */
   background-color: hsl(228 100% 60% / .7); /* Blue */
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .8rem;
@@ -164,7 +172,7 @@ ul {
 }
 
 .wammy-response-text {
-  color: hsl(240 13% 6% ); /* Black */
+  color: #FAFAFA; /* White */
   background-color: hsl(32 97% 50% / .7); /* Orange */
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .8rem;
@@ -228,7 +236,7 @@ ul {
 
 #prompt-input {
   color: hsl(240 13% 6%);
-  background-color: hsl(240, 30.3%, 75.1%);
+  /* background-color: hsl(240, 30.3%, 75.1%); */
   font-family: "clearSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.4;
@@ -251,7 +259,7 @@ ul {
 #prompt-input:focus {
   transition: 145ms cubic-bezier(.42,0,.81,1.01);
   outline: none;
-  background-color: hsl(240, 30.3%, 75.1%);
+  /* background-color: hsl(240, 30.3%, 75.1%); */
   /* border-style: outset none outset outset; */
   cursor: default;
 }
@@ -487,24 +495,7 @@ ul {
 
 }
 
-/* BODY */
-
-body {
-  font-size: 16px;
-  background-color: hsl(240, 30.3%, 75.1%);
-}
-
-/* MAIN */
-
-main {
-  margin: 3rem;
-  position: relative;
-  z-index: 1;
-  /* height: 100%; */
-  height: calc(var(--vh, 1vh)* 100);
-}
-
-/* Main PHONE QUERIES */
+/* MAIN PHONE */
 @media screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2), (max-width: 768px) and (resolution: 3dppx){
 
   main {
@@ -783,17 +774,17 @@ a:active {
 }
 
 
-/* Color palette
+/* COLOR PALETTE
 
-  Black, #0d0d11 hsl(240 13% 6%)
-  Med Black hsl(240 18% 8%)
-  Light Black, #111118 hsl(240 17% 8%)
-  Grey, hsl(240 18% 15%)
-  Ice Grey, hsl(240, 30.3%, 87.1%)
-  White, #FAFAFA hsl(0 0% 98%)
-  Off-white, hsl(240, 16.7%, 95.3%)
-  Blue, #2E58FF, hsl(228 100% 60%)
-  Orange, #FB8804, hsl(32 97% 50%)
-  Green, #29a358, hsl(143, 60%, 40%)
+  Black             #0d0d11 hsl(240 13% 6%)
+  Med Black         hsl(240 18% 8%)
+  Light Black       #111118 hsl(240 17% 8%)
+  Grey              hsl(240 18% 15%)
+  Ice Grey          hsl(240, 30.3%, 87.1%)
+  White             #FAFAFA hsl(0 0% 98%)
+  Off-white         hsl(240, 16.7%, 95.3%)
+  Blue              #2E58FF, hsl(228 100% 60%)
+  Orange            #FB8804, hsl(32 97% 50%)
+  Green             #29a358, hsl(143, 60%, 40%)
 
 */
