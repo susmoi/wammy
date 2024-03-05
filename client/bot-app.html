@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="">
-    <meta name="title" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Wammy</title>
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/css/bot-style.css">
-    <script src="https://kit.fontawesome.com/bb7ea3d4ab.js" crossorigin="anonymous">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="author" content="">
+  <meta name="title" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Wammy</title>
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/css/bot-style.css">
+  <script src="https://kit.fontawesome.com/bb7ea3d4ab.js" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 </head>
@@ -22,13 +22,13 @@
     <div id="root" class="wammy-container">
       <div class="wammy-top">
         <div class="wammy-timestamp-container">
-          <p class="wammy-timestamp-header" >Chat Start Time:</p>
+          <p class="wammy-timestamp-header">Chat Start Time:</p>
           <p id=timestamp class="wammy-timestamp"></p>
         </div>
       </div>
       <div id="screensaver-container" style="display: none">
         <figure id='wammyLogo' class="">
-          <div class="" >
+          <div class="">
             <a href="http://localhost:2626" target="_blank">
               <img src="images/wammy-logo.png" alt="" class="wammy-logoimage">
             </a>
@@ -58,60 +58,33 @@
           <div class="prompt-library-top">
             <h3 class="prompt-library-header">Prompt Library</h3>
           </div>
-            <ul id="prompt-library-list">
-              <li id="prompt-list-first-item" tabindex="1">/p phrase change alters a phrase</li>
-              <li tabindex="2">/p origin seeker finds the origin(s) of a word</li>
-              <li tabindex="3">/p screen saver turns on the screen saver</li>
-            </ul>
+          <ul id="prompt-library-list">
+            <li id="prompt-list-first-item" tabindex="1">/p phrase change alters a phrase</li>
+            <li tabindex="2">/p origin seeker finds the origin(s) of a word</li>
+            <li tabindex="3">/p screen saver turns on the screen saver</li>
+          </ul>
         </div>
         <form id="prompt-form" class="prompt-bar" action="index.html" method="post">
-            <textarea id="prompt-input" autofocus="autofocus" name="user-prompt" placeholder="Your message"></textarea>
-            <button id="prompt-button" type="submit" class="">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
-                <style>svg{fill:#000}</style>
-                <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"/>
-              </svg>
-            </button>
-          </form>
+          <textarea id="prompt-input" autofocus="autofocus" name="user-prompt" placeholder="Your message"></textarea>
+          <button id="prompt-button" type="submit" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+              <style>
+                svg {
+                  fill: hsl(223, 25%, 97%)
+                }
+              </style>
+              <path
+                d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
-
-    <section class="terms-container">
-      <div class="terms-button-container">
-        <button type="button" name="button" class="terms-button" popovertarget="terms" popovertargetaction="toggle">
-          Terms of Service
-        </button>
-      </div>
-      <article id="terms" popover="auto">
-        <h2 class="terms-header">
-          Wammy Terms of Service
-        </h2>
-        <p class="terms-body">
-          By using the services provided by Wammy, you are hereby agreeing to the following terms and conditions:
-          <br><br>
-          1. You acknowledge that Wammy is a Large Language Model. A statistical representation of human language. It uses math to understand language and respond with human-readable text. It provides its interaction services to users primarily based on GPT-4.
-          <br><br>
-          2. Whilst efforts are made by Wammy to provide accurate information, you agree that it is not responsible for any inaccuracies, errors or unsuitability of any information that may occur.
-          <br><br>
-          3. Wammy will only remember one user message at a time and therefore cannot provide persistent data storage.
-          <br><br>
-          4. Any use of the service considered disrespectful or inappropriate by Wammy can result in the termination or suspension of user interaction with the service.
-          <br><br>
-          5. You understand that Wammy will not provide real-time information updates, such as current news updates.
-          <br><br>
-          6. The copyright and all other intellectual property rights in the service provided by Wammy belong to the developer/owner. Unauthorized use of Wammy is strictly prohibited.
-          <br><br>
-          7. This agreement is made in accordance with current international laws. Any disputes related to this agreement will be resolved under applicable laws.
-          <br><br>
-          If you do not agree with these Terms of Service, please do not use Wammy.
-        </p>
-      </article>
-    </section>
   </main>
-<!-- MAIN END -->
+  <!-- MAIN END -->
 
-<!-- CUSTOM JS SCRIPTS -->
-<script src="app/app.js" type="text/javascript"></script>
+  <!-- CUSTOM JS SCRIPTS -->
+  <script src="app/app.js" type="text/javascript"></script>
 
 
 </body>

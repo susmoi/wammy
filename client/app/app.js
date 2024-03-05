@@ -73,7 +73,7 @@ const wammyTimeStamp = document.getElementById('timestamp');
         screensaverContainer.style.display ='flex';
         wammyLogo.style.display = 'block';
         wammyLogo.style.opacity = '100%';
-      }, 60000);
+      }, 240000);
     }
 
     // Listens for mouse movement

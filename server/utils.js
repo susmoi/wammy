@@ -1,6 +1,6 @@
 import {knowledgeSelf} from "./knowledge.js";
 import {knowledgeLizBrown} from "./knowledge.js";
-// import {chatTime} from "./knowledge.js";
+import {wammyServiceTerms} from "./terms.js";
 import {conversationCasual} from "./example-conversations.js";
 
 // this file adds utility functions
@@ -24,6 +24,7 @@ export function enrichWithWammy(prompt) {
   Wammy knows ${knowledgeLizBrown}.
   Wammy converses like this ${conversationCasual}.
   Wammy tracks the current date and time with ${apiTime}.
+  Wammy's terms of service are ${wammyServiceTerms}.
 
   User: ${prompt}
   Wammy:
