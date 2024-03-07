@@ -42,15 +42,15 @@ const wammyTimeStamp = document.getElementById('timestamp');
         var popup = document.getElementById('copy-popup');
 
         popup.style.display = 'block';
-        popup_container.style.display = 'flex';
+        popup_container.style.display = 'inherit';
         timer = setTimeout(() => {
           popup.style.opacity = '0%';
-        }, 100);
+        }, 200);
         timer = setTimeout(() => {
           popup.style.display = 'none';
           popup_container.style.display = 'none';
           popup.style.opacity = '100%';
-        }, 5000);
+        }, 201);
       });
 
     });

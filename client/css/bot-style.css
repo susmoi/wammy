@@ -67,7 +67,10 @@ main {
   color: #0d0d11;
 }
 
-.wammy-bottom {}
+.wammy-bottom {
+  display: flex;
+  justify-content: center;
+}
 
 #screensaver-container {
   display: flex;
@@ -125,7 +128,7 @@ ul {
 .user-prompt-container {
   display: flex;
   justify-content: end;
-  padding: .5rem;
+  padding: .2rem;
   list-style: none;
   border-radius: 1rem;
   width: 100%;
@@ -137,9 +140,10 @@ ul {
 .user-prompt-container:hover {}
 
 .user-prompt-text {
-  color: hsl(223, 25%, 97%);
+  color: hsl(32 97% 97%);
   /* background-color: #a3aec9; */
-  background-color: hsl(223, 25%, 63%);
+  /* background-color: hsl(223, 25%, 63%); */
+  background-color: hsl(32 97% 50%);
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .8rem;
   line-height: 1.4;
@@ -151,13 +155,13 @@ ul {
   align-self: center;
   transition: 300ms cubic-bezier(.42, 0, .81, 1.01);
   /* box-shadow: 2px 2px 3px hsl(240, 30%, 80%); */
-  border: solid hsl(223, 25%, 66%) 1.2px;
+  border: solid hsl(32 97% 53%) 1.2px;
 }
 
 .wammy-response-container {
   display: flex;
   justify-content: start;
-  padding: .5rem;
+  padding: .2rem;
   margin-bottom: .8rem;
   list-style: none;
   border-radius: 1rem;
@@ -170,13 +174,13 @@ ul {
   color: hsl(223, 25%, 97%);
   cursor: pointer;
   /* outline: solid 1.9px; */
-  background-color: hsl(31 100% 44%);
-  border: solid hsl(31 100% 35%) 1.2px;
+  background-color: hsl(223, 25%, 20%);
+  border: solid hsl(223, 25%, 23%) 1.2px;
 }
 
 .wammy-response-text {
   color: hsl(223, 25%, 97%);
-  background-color: hsl(223, 25%, 63%);
+  background-color: hsl(223, 25%, 37%);
   font-family: "clearSans", "Arial", sans-serif;
   font-size: .8rem;
   line-height: 1.4;
@@ -188,7 +192,7 @@ ul {
   align-self: center;
   /* transition: 300ms cubic-bezier(.42, 0, .81, 1.01); */
   /* box-shadow: 2px 2px 3px hsl(240, 30%, 80%); */
-  border: solid hsl(223, 25%, 66%) 1.2px;
+  border: solid hsl(223, 25%, 40%) 1.2px;
 }
 
 
@@ -371,8 +375,7 @@ ul {
 
 #popup-container {
   display: none;
-  justify-content: center;
-  width: 100%;
+  width: fit-content;
   /*! margin-top: 1rem; */
   /*! margin-right: 1rem; */
   padding: 1rem;
