@@ -128,7 +128,7 @@ ul {
 .user-prompt-container {
   display: flex;
   justify-content: end;
-  padding: .2rem;
+  padding-bottom: 2.5px;
   list-style: none;
   border-radius: 1rem;
   width: 100%;
@@ -161,7 +161,6 @@ ul {
 .wammy-response-container {
   display: flex;
   justify-content: start;
-  padding: .2rem;
   margin-bottom: .8rem;
   list-style: none;
   border-radius: 1rem;
@@ -235,9 +234,9 @@ ul {
 #prompt-form {
   display: flex;
   width: 100%;
-  border-radius: 17px;
+  border-radius: 16px;
   /* box-shadow: 2px 2px 3px hsl(31 100% 44%); */
-  border: solid hsl(223, 25%, 66%) 2px;
+  border: solid hsl(223, 25%, 60%) 1.2px;
 }
 
 #prompt-form:focus {
