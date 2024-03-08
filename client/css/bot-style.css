@@ -137,8 +137,6 @@ ul {
   /* background-color: hsl(228 100% 60% / .9); */
 }
 
-.user-prompt-container:hover {}
-
 .user-prompt-text {
   color: hsl(32 97% 97%);
   /* background-color: #a3aec9; */
@@ -350,8 +348,6 @@ ul {
   color: hsl(240 13% 6%);
 }
 
-.terms-button-container {}
-
 .terms-button {
   background-color: hsl(240, 30.3%, 75.1%);
   border: none;
@@ -419,8 +415,6 @@ ul {
     border-radius: 20px;
   }
 
-  .wammy-timestamp-container {}
-
   .wammy-timestamp {
     font-size: .2rem;
     padding: .2rem;
@@ -470,8 +464,6 @@ ul {
     margin: 3rem 0 0 0;
     width: max-content;
   }
-
-  .prompt-container {}
 
   .prompt-form {
     width: 100%;
